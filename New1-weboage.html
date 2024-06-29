@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>nav_bar</title>
+ 
+ <style>
+    .carousel-inner {height:300px;}
+ </style>
+
+</head>
+<body>
+    
+        <div class=" bg-secondary text-white" style="width:100%">
+       
+          <h1>Code world</h1>
+        
+          <p>In Code World you control the robot that can walk around the world and send messages to devices. Every device reacts on those messages according to its code. You will have to read this code, understand what messages to send and write your own code.</p> 
+    
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="images/code.jpg.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="collapse navbar-collapse hover" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="jumbotron_and_card.html">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="New_webpage.html">CSS</a>
+              </li>
+
+              
+              <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  BOOTSTRAP
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="images/images.jpg">Bootstrap 3</a></li>
+                  <li><a class="dropdown-item" href="images/images.jpeg">Bootstrap 4</a></li>
+                  <li><a class="dropdown-item" href="images/download.jpg">Bootstrap 5</a></li>
+                </ul>
+              </div>   
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+        </nav>
+    </div>
+
+
+    <div class="row mt-2">
+        <div class="col-1" >
+            <h3>HTML</h3>
+            <img src="images/html.jpg" style="width:100%;">
+        </div>
+        <div class="col-11">
+            <h3>About HTML</h3>
+            <p> HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.
+                HTML is a formal recommendation by the World Wide Web Consortium (W3C) and is generally adhered to by all major web browsers, including both desktop and mobile web browsers. HTML5 is the latest version of the specification.</p>
+        </div>
+    
+
+    <div class="col-1" >
+        <h3>CSS</h3>
+        <img src="images/css.jpeg" style="width:100%;">
+    </div>
+    <div class="col-11">
+        <h3>About CSS</h3>
+        <p>CSS stands for Cascading style sheets. It describes to the user how to display HTML elements on the screen in a proper format. CSS is the language that is used to style HTML documents. In simple words, cascading style sheets are a language used to simplify the process of making a webpage.
+            CSS is used to handle some parts of the webpage. With the help of CSS, we can control the colour of text and style of fonts, and we can control the spacing between the paragraph and many more things. CSS is easy to understand but provides strong control on the Html documents.CSS is combined with HTML.</p>
+    </div>
+
+
+    <div class="col-1 mt-2" >
+        <h3>BS</h3>
+        <img src="images/bootstrap.png" style="width:100%; height:50%;">
+    </div>
+    <div class="col-11">
+        <h3>About Bootstrap</h3>
+        <p>Bootstrap is a point of conversation that many have as web developers. Some use it as a toolkit, some use it just to test, and some do not use it at all. However, to join that conversation, you need to answer one fundamental question: ‘What is Bootstrap?’ Worry not. Today, we are doing just that, answering the most basic questions and guiding you through the intricate yet simple world of Bootstrap. So grab your boots and strap in; this is going to be one hell of a ride.</p>
+    </div>
+
+  </div>
+    
+<br>
+<p style="text-align:center">The love of Code</p>
+<br>
+
+  <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/html3.png" alt="Los Angeles"  style="width:100% ">
+      </div>
+      <div class="carousel-item">
+        <img src="images/css.jpeg" alt="Chicago"  style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="images/bootstrap.png" alt="New York"  style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+
+</body>
+</html>
